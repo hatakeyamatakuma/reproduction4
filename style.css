@@ -1,1 +1,137 @@
 /* 命名規則　BEM */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.mainVisual {
+  display: flex;
+  justify-content: right;
+  background-image: url(https://placehold.jp/1200x1000.png);
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+}
+.mainVisual h1 {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: white;
+  background-color: gray;
+  margin: 30px;
+  padding: 0 8px;
+  height: 40px;
+}
+
+.mainTitle {
+  text-align: center;
+  padding: 30px;
+}
+
+.mainTitle  h2{
+  padding: 20px;
+}
+
+.mainTitle {
+  font-size: 0.9rem;
+}
+
+.mainContent {
+  margin: 0 9%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent__archive, .mainContent__new {
+  background-image: url(https://placehold.jp/450x450.png);
+  width: 49%;
+  height: 450px;
+}
+
+.mainContent__archive, .mainContent__new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent__archive__text, .mainContent__new__text {
+  text-align: center;
+  color: white;
+}
+
+.fashionStyle {
+  background-image: url(https://placehold.jp/1200x500.png);
+  height: 500px;
+  margin: 80px 0;
+}
+
+.fashionStyle__text {
+  text-align: center;
+  padding: 30px;
+}
+
+.fashionStyle__text h2 {
+  margin: 10px;
+}
+
+.fashionStyle__text a p {
+  margin: 30px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 0.8rem;
+}
+
+.catalogAntique {
+  background-image: url(https://placehold.jp/1400x1400.png);
+  height: 1400px;
+}
+
+.catalogAntique__catalog, .catalogAntique__antique{
+  display: flex;
+  justify-content: center;
+  margin: 50px 9%;
+  padding: 60px 0;
+  align-items: center;
+  text-align: center;
+}
+
+.catalogAntique__catalog img, .catalogAntique__antique img{
+  border: 1px solid black;
+}
+
+.catalogAntique__catalog  p, .catalogAntique__antique p{
+  font-size: 0.95rem;
+  margin: 30px 0;
+}
+
+.footer__black {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px;
+  background-color: rgb(68, 68, 68);
+}
+
+.footer__black h1, .footer__black div {
+  width: 33%;
+}
+
+.footer__black__title {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+.footer__black li, .footer__black p {
+  font-size: 0.8rem;
+}
+
+.footer__black ul {
+  list-style-position: inside;
+}
+
+.footer__white {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.7rem;
+}
