@@ -8,68 +8,88 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <div class="mainVisual">
-    <h1>Mag88</h1>
-    <img>
-  </div>
+  <header id="header">
+    <h1 class="header__title">
+      <img src="https://placehold.jp/120x40.png" alt="Mag88">
+    </h1>
+  </header>
   <main>
-    <section class="mainTitle">
-      <h2>A special, long article in a newspaper or magazine</h2>
+    <section id="magazine" class="wrapper">
+      <h2 class="magazine__title">A special, long article in a newspaper or magazine</h2>
       <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-    </section>
-    <section class="mainContent">
-      <div class="mainContent__archive">
-        <div class="mainContent__archive__text">
-          <h3>Archive</h3>
-          <p>テキストテキストテキストテキスト</p>
-          <p>テキストテキストテキスト</p>
-        </div>
-      </div>
-      <div class="mainContent__new">
-        <div class="mainContent__new__text">
-          <h3>New</h3>
-          <p>テキストテキストテキストテキスト</p>
-          <p>テキストテキストテキスト</p>
-        </div>
-      </div>
-    </section>
-    <section class="fashionStyle">
-      <div class="fashionStyle__text">
-        <h2>Fashion & Style</h2>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        <a>
-          <p>Read More</p>
+      <div class="magazine__flex">
+        <a class="magazine__flex__item" href="#">
+          <img src="https://placehold.jp/500x500.png">
+          <div class="magazine__text">
+            <p class="magazine__text__title">Archive</p>
+            <p>
+              テキストテキストテキストテキスト
+              <br>
+              テキストテキストテキスト
+            </p>
+          </div>
+        </a>
+        <a class="magazine__flex__item" href="#">
+          <img src="https://placehold.jp/500x500.png">
+          <div class="magazine__text">
+            <p class="magazine__text__title">New</p>
+            <p>
+              テキストテキストテキストテキスト
+              <br>
+              テキストテキストテキスト
+            </p>
+          </div>
         </a>
       </div>
     </section>
+    <section id="fashionStyle">
+      <div class="wrapper">
+        <h2 class="fashionStyle__title">Fashion & Style</h2>
+        <p>
+          テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          <br>
+          テキストテキストテキストテキストテキストテキストテキストテキスト
+        </p>
+        <a class="fashionStyle__btn" href="#">Read More</a>
+      </div>
+    </section>
     <section class="catalogAntique">
-      <div class="catalogAntique__catalog">
-        <img src="https://placehold.jp/500x500.png">
-        <div class="catalogAntique__text">
-          <h3>Catalog</h3>
+      <div class="catalogAntique__flex wrapper">
+        <div class="catalogAntique__flex__item">
+          <img src="https://placehold.jp/500x500.png">
+        </div>
+        <div class="catalogAntique__flex__item">
+          <h2 class="catalogAntique__flex__item__title">Catalog</h2>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
       </div>
-      <div class="catalogAntique__antique">
-        <div class="catalogAntique__text">
-          <h3>Antique</h3>
+    </section>
+    <section class="catalogAntique">
+      <div class="catalogAntique__flex wrapper">
+        <div class="catalogAntique__flex__item">
+          <h2 class="catalogAntique__flex__item__title">Antique</h2>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
           <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
-        <img src="https://placehold.jp/500x500.png">
+        <div class="catalogAntique__flex__item">
+          <img src="https://placehold.jp/500x500.png">
+        </div>
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__black">
-      <h1>Mag88</h1>
-      <div>
-        <h3 class="footer__black__title">タイトル</h3>
+  <footer id="footer">
+    <div class="footer__black wrapper">
+      <div class="footer__black__item">
+        <a>
+          <img src="https://placehold.jp/120x40.png">
+        </a>
+      </div>
+      <div class="footer__black__item">
+        <p class="footer__black__item__title">タイトル</p>
         <ul>
           <li>テキストテキストテキスト</li>
           <li>テキストテキストテキスト</li>
@@ -78,14 +98,12 @@
           <li>テキストテキストテキスト</li>
         </ul>
       </div>
-      <div>
-        <h3 class="footer__black__title">タイトルタイトルタイトル</h3>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <div class="footer__black__item">
+        <p class="footer__black__item__title">タイトルタイトルタイトル</p>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
       </div>
     </div>
-    <div class="footer__white">
-      <p>©️ Mag88</p>
-    </div>
+    <p class="footer__white">©️ Mag88</p>
   </footer>
 </body>
 </html>
